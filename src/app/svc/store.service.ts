@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 
+declare var fin: any; // We do have typedefs available
+
 @Injectable()
 export class StoreService {
 
@@ -20,5 +22,6 @@ export class StoreService {
   //
   changeMessage(message: string) {
     this.messageSource.next(message);
+    fin.desktop.InterApplicationBus.publish('childmessage', message);
   }
 }
