@@ -10,4 +10,7 @@ OpenFin POC for Angular Multi-Window integration
 
 3. `http://localhost:4200/`
 
-4. Follow the steps to reproduce provided in the screen
+4. ```bash
+npm i -g openfin-cli
+openfin -l -c app.json
+```
