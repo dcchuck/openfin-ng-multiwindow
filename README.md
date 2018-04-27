@@ -8,6 +8,6 @@ OpenFin POC for Angular Multi-Window integration
 
 2. Run `ng serve`
 
-3. `http://localhost:4200/`
+3. Install the openfin cli if you don't have it `npm i -g openfin-cli`
 
-4. Follow the steps to reproduce provided in the screen
+4. `openfin -l -c app.json`
