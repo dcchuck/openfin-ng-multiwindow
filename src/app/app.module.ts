@@ -7,7 +7,8 @@ import { routingModule } from './app.routing';
 import { ParentComponent } from './components/parent/parent.component';
 import { AComponent } from './components/a/a.component';
 import { BComponent } from './components/b/b.component';
-import { StoreService } from 'app/svc/store.service';
+import { StoreService } from './svc/store.service';
+import { OpenfinServiceComponent } from './components/openfin-service/openfin-service.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { StoreService } from 'app/svc/store.service';
     AppComponent,
     ParentComponent,
     AComponent,
-    BComponent
+    BComponent,
+    OpenfinServiceComponent
   ],
   imports: [
     routingModule,
